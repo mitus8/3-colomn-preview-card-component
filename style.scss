@@ -1,0 +1,97 @@
+$Brightorange: hsl(31, 77%, 52%);
+$Darkcyan: hsl(184, 100%, 22%);
+$Verydarkcyan: hsl(179, 100%, 13%);
+$paragraphs: hsla(0, 0%, 100%, 0.75);
+$backgroundHeadingsButtons: hsl(0, 0%, 95%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lexend Deca', sans-serif;    
+}
+p {
+    font-family: 'Big Shoulders Display', cursive;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    .card1 {
+        background-color: $Brightorange;
+        height: 400px;
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2em;
+        border-radius: 10px 0 0 10px;
+    }
+    .card2 {
+        background-color: $Darkcyan;
+        height: 400px;
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2em;
+    }
+    .card3 {
+        background-color: $Verydarkcyan;
+        height: 400px;
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2em;
+        border-radius: 0 10px 10px 0;
+    }
+    h1 {
+        color: $backgroundHeadingsButtons;
+        text-transform: uppercase;
+        font-family: 'Big Shoulders Display', cursive;
+    }
+    .p1 {
+        color: $paragraphs;
+    }
+    button {
+        padding: 0.6em 1.2em;
+        border-radius: 25px;
+        border: 1px solid $backgroundHeadingsButtons;
+        cursor: pointer;
+        &:hover {
+            background: transparent;
+            color: $backgroundHeadingsButtons;
+        }
+    }
+    .btn1 {
+        color: $Brightorange;
+    }
+    .btn2 {
+        color: $Darkcyan;
+    }
+    .btn2 {
+        color: $Verydarkcyan;
+    }
+}
+@media (max-width:760px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+        .card1 {
+            border-radius: 10px 10px 0 0;
+        }
+        .card3 {
+            border-radius: 0 0 10px 10px;
+        }
+    }
+}
